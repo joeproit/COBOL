@@ -41,6 +41,12 @@ Begin.
         READ InputFile
             AT END SET END-OF-FILE TO TRUE
             NOT AT END
+                IF WS-InputStatus NOT EQUAL ZERO
+                    DISPLAY 'Error reading INPUT.DAT. File Status: ' WS-InputStatus
+                    CLOSE InputFile
+                    CLOSE OutputFile
+                    STOP RUN
+                END-IF
                 MOVE InputRecord TO OutputRecord
                 WRITE OutputRecord
                 DISPLAY OutputRecord
