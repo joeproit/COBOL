@@ -60,6 +60,15 @@ Begin.
     END-PERFORM
 
     CLOSE InputFile
+    IF WS-InputStatus NOT EQUAL ZERO
+        DISPLAY 'Error closing INPUT.DAT. File Status: ' WS-InputStatus
+        STOP RUN
+    END-IF
+
     CLOSE OutputFile
+    IF WS-OutputStatus NOT EQUAL ZERO
+        DISPLAY 'Error closing OUTPUT.DAT. File Status: ' WS-OutputStatus
+        STOP RUN
+    END-IF
 
     STOP RUN.
