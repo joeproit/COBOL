@@ -9,7 +9,7 @@ To date, my training has come in 4 forms:
 1. Unstructured videos (Mostly Youtube)
 2. Unstructured reading (Mostly Google Books)
 3. Online courses (IBM, PluralSight, Udemy)
-4. Trial and Error
+4. Trial and Error. TIME! NEVER QUIT!
 
 My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j and MicroFocus Visual COBOL Personal Edition Trial as a part of my learning environment.
 
