@@ -49,6 +49,12 @@ Begin.
                 END-IF
                 MOVE InputRecord TO OutputRecord
                 WRITE OutputRecord
+                IF WS-OutputStatus NOT EQUAL ZERO
+                    DISPLAY 'Error writing OUTPUT.DAT. File Status: ' WS-OutputStatus
+                    CLOSE InputFile
+                    CLOSE OutputFile
+                    STOP RUN
+                END-IF
                 DISPLAY OutputRecord
         END-READ
     END-PERFORM
