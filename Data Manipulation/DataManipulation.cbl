@@ -18,6 +18,7 @@ WORKING-STORAGE SECTION.
    05 AccountBalance PIC 9(7)V99 VALUE ZEROS.
 01 DepositAmount PIC 9(7)V99 VALUE ZEROS.
 01 UpdatedBalance PIC 9(7)V99 VALUE ZEROS.
+01 UpdatedBalanceString PIC X(10) VALUE SPACES.
 01 ReceiptString PIC X(80) VALUE SPACES.
 
 PROCEDURE DIVISION.
@@ -35,13 +36,14 @@ Begin.
     * Arithmetic operations
     COMPUTE UpdatedBalance = AccountBalance + DepositAmount
 
+    * Data conversion
+    MOVE UpdatedBalance TO UpdatedBalanceString
+
     * String manipulation
     STRING "Customer: " CustomerName
            ", Deposit Amount: " DepositAmount
-           ", New Balance: " INTO ReceiptString
-
-    * Data conversion
-    * TO-DO: Convert the updated balance to a string and include it in the receipt string
+           ", New Balance: " UpdatedBalanceString
+           INTO ReceiptString
 
     * Write the receipt to a file
     OPEN OUTPUT ReceiptFile
