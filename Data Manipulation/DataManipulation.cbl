@@ -33,7 +33,7 @@ Begin.
     ACCEPT DepositAmount.
 
     * Arithmetic operations
-    * TO-DO: Calculate the updated balance
+    COMPUTE UpdatedBalance = AccountBalance + DepositAmount
 
     * String manipulation
     * TO-DO: Prepare a receipt string
