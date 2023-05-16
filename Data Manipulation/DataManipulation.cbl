@@ -28,22 +28,22 @@ Begin.
 
     DISPLAY "Enter the customer name: "
     ACCEPT CustomerName
-    IF FUNCTION NUMVAL-C(CustomerName) > 0
-        DISPLAY "Error: Customer name cannot be a number. Please try again."
+    IF FUNCTION LENGTH(CustomerName) = 0
+        DISPLAY "Error: Customer name cannot be empty. Please try again."
         STOP RUN
     END-IF.
 
     DISPLAY "Enter the current account balance: "
     ACCEPT AccountBalance
-    IF FUNCTION NUMVAL-C(AccountBalance) = 0
-        DISPLAY "Error: Invalid account balance. Please enter a number."
+    IF FUNCTION NUMVAL-C(AccountBalance) = 0 OR AccountBalance < 0
+        DISPLAY "Error: Invalid account balance. Please enter a positive number."
         STOP RUN
     END-IF.
 
     DISPLAY "Enter the deposit amount: "
     ACCEPT DepositAmount
-    IF FUNCTION NUMVAL-C(DepositAmount) = 0
-        DISPLAY "Error: Invalid deposit amount. Please enter a number."
+    IF FUNCTION NUMVAL-C(DepositAmount) = 0 OR DepositAmount < 0
+        DISPLAY "Error: Invalid deposit amount. Please enter a positive number."
         STOP RUN
     END-IF.
 
