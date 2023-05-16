@@ -36,7 +36,9 @@ Begin.
     COMPUTE UpdatedBalance = AccountBalance + DepositAmount
 
     * String manipulation
-    * TO-DO: Prepare a receipt string
+    STRING "Customer: " CustomerName
+           ", Deposit Amount: " DepositAmount
+           ", New Balance: " INTO ReceiptString
 
     * Data conversion
     * TO-DO: Convert the updated balance to a string and include it in the receipt string
