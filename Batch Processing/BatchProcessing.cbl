@@ -11,7 +11,7 @@ FILE-CONTROL.
            
 DATA DIVISION.
 FILE SECTION.
-FD SalesFile BLOCK CONTAINS 0 RECORDS.
+FD SalesFile.
 01 SalesRecord.
    05 SaleID PIC 9(5).
    05 SaleDate PIC X(10).
@@ -47,7 +47,7 @@ Begin.
             AT END SET WS-EndOfFile TO "Y"
             NOT AT END DISPLAY SalesRecord
         END-READ
-    END-PERFORM
+    END-PERFORM.
 
     DISPLAY "Total Sales: " TotalSales
     DISPLAY "Total Quantity: " TotalQuantity
