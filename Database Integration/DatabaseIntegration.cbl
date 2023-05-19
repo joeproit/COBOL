@@ -7,7 +7,7 @@ WORKING-STORAGE SECTION.
 01  WS-EMPLOYEE-NAME                 PIC X(30).
 01  WS-EMPLOYEE-ID                   PIC 9(10).
 
-EXEC SQL INCLUDE SQLCA END-EXEC.    /* Include SQL Communications Area  */
+EXEC SQL INCLUDE SQLCA END-EXEC.    /* Include SQL Communications */
 
 PROCEDURE DIVISION.
 MAIN-PARAGRAPH.
