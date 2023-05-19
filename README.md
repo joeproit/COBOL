@@ -22,6 +22,10 @@ My primary development environment is Visual Studio Code, leveraging the IBM Z O
 4. [Batch Processing](#batch-processing)
 5. [Error Handling](#error-handling)
 6. [Database Integration](#database-integration)
+7. [Payroll](#payroll-system)
+8. [Billing](#billing-system)
+9. [Inventory](#inventory-system)
+10. [Banking](#banking-system)
 
 ## File Handling
 
@@ -46,6 +50,11 @@ My primary development environment is Visual Studio Code, leveraging the IBM Z O
 ## Database Integration
 
 "DatabaseIntegration.cbl" is an example of a COBOL program that interacts with a database. It uses embedded SQL to query the database and COBOL to process the results.
+
+## Payroll System
+## Billing System
+## Inventory System
+## Banking System
 
 ## About Me
 
