@@ -52,9 +52,20 @@ My primary development environment is Visual Studio Code, leveraging the IBM Z O
 "DatabaseIntegration.cbl" is an example of a COBOL program that interacts with a database. It uses embedded SQL to query the database and COBOL to process the results.
 
 ## Payroll System
+
+TBD
+
 ## Billing System
+
+TBD
+
 ## Inventory System
+
+TBD
+
 ## Banking System
+
+TBD
 
 ## About Me
 
