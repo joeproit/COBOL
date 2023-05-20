@@ -2,7 +2,7 @@
 
 The provided code is a batch processing program that performs the following tasks:
 
-1. Defines the file control section, specifying the input file "SALES.DAT" and its attributes such as organization, access mode, and file status.
+1. Defines the file control section, specifying the input file "SALES.DAT" and its attributes such as organization, access mode, and file status..
 
 2. Defines the structure of the records in the "SALES.DAT" file, including fields for sale ID, sale date, product ID, quantity, and sale price.
 
