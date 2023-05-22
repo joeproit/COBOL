@@ -10,7 +10,7 @@ To date, my training has come in 4 forms:
 1. Unstructured videos (Mostly Youtube, about 10 hours)
 2. Unstructured reading (Mostly Google Books, about 5 hours)
 3. Online courses (IBM, PluralSight, Udemy, about 30 hours)
-4. Personal coding, of which this Github serves as a open copy.
+4. Personal coding, of which this Github serves as a open copy. 20 hours.
 5. Trial and Error. TIME! NEVER QUIT!
 
 My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j and MicroFocus Visual COBOL Personal Edition Trial as a part of my learning environment. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
