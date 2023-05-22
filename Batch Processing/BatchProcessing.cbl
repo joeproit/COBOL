@@ -7,12 +7,12 @@ FILE-CONTROL.
     SELECT SalesFile ASSIGN TO "SALES.DAT"
            ORGANIZATION IS SEQUENTIAL
            ACCESS MODE IS SEQUENTIAL
-           FILE STATUS IS WS-FileStatus.
+           FILE STATUS IS WS-FileStatus-Code.
            
 DATA DIVISION.
 FILE SECTION.
 FD SalesFile.
-01 SalesRecord.
+01 SalesRecord PIC X(32).
    05 SaleID PIC 9(5).
    05 SaleDate PIC X(10).
    05 ProductID PIC X(10).
@@ -20,7 +20,7 @@ FD SalesFile.
    05 SalePrice PIC 9(7)V99.
 
 WORKING-STORAGE SECTION.
-01 WS-FileStatus PIC 9(2) VALUE ZEROS.
+01 WS-FileStatus-Code PIC 9(2) VALUE ZEROS.
 01 WS-EndOfFile PIC X VALUE "N".
 01 TotalSales PIC 9(9)V99 VALUE ZEROS.
 01 TotalQuantity PIC 9(6) VALUE ZEROS.
@@ -36,8 +36,8 @@ WORKING-STORAGE SECTION.
 PROCEDURE DIVISION.
 Begin.
     OPEN INPUT SalesFile
-    IF WS-FileStatus NOT EQUAL ZERO
-        DISPLAY "Error: Unable to open SALES.DAT. File Status: " WS-FileStatus
+    IF WS-FileStatus-Code NOT EQUAL ZERO
+        DISPLAY "Error: Unable to open SALES.DAT. File Status: " WS-FileStatus-Code
         STOP RUN
     END-IF.
 
@@ -62,8 +62,8 @@ Begin.
     DISPLAY "Total Quantity: " TotalQuantity
 
     CLOSE SalesFile
-    IF WS-FileStatus NOT EQUAL ZERO
-        DISPLAY "Error: Unable to close SALES.DAT. File Status: " WS-FileStatus
+    IF WS-FileStatus-Code NOT EQUAL ZERO
+        DISPLAY "Error: Unable to close SALES.DAT. File Status: " WS-FileStatus-Code
         STOP RUN
     END-IF.
 
@@ -71,7 +71,7 @@ Begin.
 
 DISPLAY-BLOCK-RECORDS.
     PERFORM VARYING WS-INDEX FROM 1 BY 1 UNTIL WS-INDEX > 100
-        DISPLAY BlockSalesRecord(WS-INDEX)
+        DISPLAY BlockSalesRecord(WS-INDEX:32)
     END-PERFORM.
 
 END PROGRAM BatchProcessing.
