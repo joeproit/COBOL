@@ -25,27 +25,36 @@ WORKING-STORAGE SECTION.
 01 TotalSales PIC 9(9)V99 VALUE ZEROS.
 01 TotalQuantity PIC 9(6) VALUE ZEROS.
 
+01 BlockSalesRecordTable.
+   05 BlockSalesRecord OCCURS 100 TIMES.
+      10 BlockSaleID PIC 9(5).
+      10 BlockSaleDate PIC X(10).
+      10 BlockProductID PIC X(10).
+      10 BlockQuantity PIC 9(3).
+      10 BlockSalePrice PIC 9(7)V99.
+
 PROCEDURE DIVISION.
 Begin.
-
     OPEN INPUT SalesFile
     IF WS-FileStatus NOT EQUAL ZERO
         DISPLAY "Error: Unable to open SALES.DAT. File Status: " WS-FileStatus
         STOP RUN
     END-IF.
 
-    READ SalesFile
+    READ SalesFile INTO BlockSalesRecordTable
         AT END SET WS-EndOfFile TO "Y"
-        NOT AT END DISPLAY SalesRecord
+        NOT AT END PERFORM DISPLAY-BLOCK-RECORDS
     END-READ.
 
     PERFORM UNTIL WS-EndOfFile = "Y"
-        COMPUTE TotalSales = TotalSales + (Quantity * SalePrice)
-        ADD Quantity TO TotalQuantity
+        PERFORM VARYING WS-INDEX FROM 1 BY 1 UNTIL WS-INDEX > 100
+            COMPUTE TotalSales = TotalSales + (BlockQuantity(WS-INDEX) * BlockSalePrice(WS-INDEX))
+            ADD BlockQuantity(WS-INDEX) TO TotalQuantity
+        END-PERFORM
 
-        READ SalesFile
+        READ SalesFile INTO BlockSalesRecordTable
             AT END SET WS-EndOfFile TO "Y"
-            NOT AT END DISPLAY SalesRecord
+            NOT AT END PERFORM DISPLAY-BLOCK-RECORDS
         END-READ
     END-PERFORM.
 
@@ -59,5 +68,10 @@ Begin.
     END-IF.
 
     STOP RUN.
+
+DISPLAY-BLOCK-RECORDS.
+    PERFORM VARYING WS-INDEX FROM 1 BY 1 UNTIL WS-INDEX > 100
+        DISPLAY BlockSalesRecord(WS-INDEX)
+    END-PERFORM.
 
 END PROGRAM BatchProcessing.
