@@ -5,5 +5,4 @@ Should someone from IBM wish me to take it down I will.
 (https://learn.ibm.com/course/view.php?id=7552)
 
 Thanks
-JoePro
-
+-JoePro-
