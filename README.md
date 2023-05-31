@@ -13,7 +13,7 @@ To date, my training has come in these forms:
    - Pluralsight (12 hours + playtime): [Pluralsight Profile](https://app.pluralsight.com/profile/joepro)
    - IBM (20 hours): [IBM Course](https://learn.ibm.com/course/view.php?id=7552) - Learning COBOL Programming with VSCode
 2. Unstructured reading (Mostly Google Books)
-3. Personal coding, of which this Github serves as an open copy.
+3. Personal coding; This GitHub Repo. COBOL has a huge gap in professional guidance so I've been developing my own training.
 4. Trial and Error. TIME! NEVER QUIT!
 
 My education is ongoing, as I'm still reviewing COBOL content at Pluralsight and there's at least 2 courses in my Udemy queue regarding JCL and DB2. My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
