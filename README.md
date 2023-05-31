@@ -16,7 +16,7 @@ To date, my training has come in these forms:
 3. Personal coding, of which this Github serves as an open copy.
 4. Trial and Error. TIME! NEVER QUIT!
 
-My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
+My education is ongoing, as I'm still reviewing COBOL content at Pluralsight and there's at least 2 courses in my Udemy queue regarding JCL and DB2. My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
 
 ## Table of Contents
 
