@@ -9,8 +9,8 @@ This repository contains a collection of COBOL programs demonstrating a variety 
 To date, my training has come in these forms:
 
 1. Structured Videos on IBM, Udemy, and Pluralsight:
-   - Udemy (10 hours): [Udemy Certificate](https://www.udemy.com/certificate/UC-81c54d97-8485-488f-a7ef-8af8f23b99ad/)
-   - Pluralsight (12 hours): [Pluralsight Profile](https://app.pluralsight.com/profile/joepro)
+   - Udemy (10 hours lectures + playtime): [Udemy Certificate](https://www.udemy.com/certificate/UC-81c54d97-8485-488f-a7ef-8af8f23b99ad/)
+   - Pluralsight (12 hours + playtime): [Pluralsight Profile](https://app.pluralsight.com/profile/joepro)
    - IBM (20 hours): [IBM Course](https://learn.ibm.com/course/view.php?id=7552) - Learning COBOL Programming with VSCode
 2. Unstructured reading (Mostly Google Books)
 3. Personal coding, of which this Github serves as an open copy.
