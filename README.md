@@ -9,14 +9,14 @@ This repository contains a collection of COBOL programs demonstrating a variety 
 To date, my training has come in these forms:
 
 1. Structured Videos on IBM, Udemy, and Pluralsight:
-   - Udemy (10 hours): [Udemy Certificate](https://www.udemy.com/certificate/UC-81c54d97-8485-488f-a7ef-8af8f23b99ad/)
-   - Pluralsight (12 hours): [Pluralsight Profile](https://app.pluralsight.com/profile/joepro)
+   - Udemy (10 hours lectures + playtime): [Udemy Certificate](https://www.udemy.com/certificate/UC-81c54d97-8485-488f-a7ef-8af8f23b99ad/)
+   - Pluralsight (12 hours + playtime): [Pluralsight Profile](https://app.pluralsight.com/profile/joepro)
    - IBM (20 hours): [IBM Course](https://learn.ibm.com/course/view.php?id=7552) - Learning COBOL Programming with VSCode
 2. Unstructured reading (Mostly Google Books)
-3. Personal coding, of which this Github serves as an open copy.
+3. Personal coding; This GitHub Repo. COBOL has a huge gap in professional guidance so I've been developing my own training.
 4. Trial and Error. TIME! NEVER QUIT!
 
-My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
+My education is ongoing, as I'm still reviewing COBOL content at Pluralsight and there's at least 2 courses in my Udemy queue regarding JCL and DB2. My primary development environment is Visual Studio Code, leveraging the IBM Z Open Editor Extension in Windows 10 x64. I have also been leveraging MVS 3.8j. Thanks to the Open Mainframe Project (https://www.openmainframeproject.org/).
 
 ## Table of Contents
 
