@@ -6,6 +6,8 @@
 
 This repository contains a collection of COBOL programs demonstrating a variety of skills and techniques. Each program serves as a standalone example of a specific aspect of COBOL programming. These programs were created as part of my COBOL learning journey and are maintained here as a portfolio for potential employers to review.
 
+As of September 1st, 2023 this repo is archived. No more changes will be done, as I've chosen to continue my career in other avenues. 
+
 To date, my training has come in these forms:
 
 1. Structured Videos on IBM, Udemy, and Pluralsight:
